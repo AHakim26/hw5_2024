@@ -32,6 +32,8 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 /* Step 4: Edited the css for the nav_links class to use flex to match the example. Did not modify the list items or the links - modified the nav_links class to use flex. */
@@ -43,7 +45,7 @@ header {
 /* Step 5: Styled the links so that they have the same color even after they have been visited. */
 .nav_item a {
     color: blue;
-    text-decoration: none;
+    text-decoration: underline;
 }
 .nav_item a:visited {
     color: blue;
@@ -75,7 +77,9 @@ solid 2px border using #45ADAD,
     gap: 20px;
     margin-top: 20px;
     flex-wrap: wrap;
+
 }
+
 /* Step 9: Styled the images in the gallery class. These elements have a solid 10px border with a color of #50C7C7, 10px margin on all four sides and a width of 300px. */
 .gallery img {
     border-style: solid;
@@ -101,7 +105,7 @@ header {
     padding: 20px;
     top: 0;
     z-index: 1000;
-    position: sticky;
+
 
 }
 .nav_links {
@@ -117,6 +121,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    text-align: center;
 }
 .card {
     flex-basis: 275px;
@@ -127,12 +132,24 @@ header {
 }
 
 
-/* Step 13: Modified the first header (the one not inside main) so that it remains visible at the top of the screen even as we scroll down. Made sure that it is always visible. An example of this is in the video and in the screenshot at 1200px when scrolled. */
+/* Step 13: Modified the first header (the one not inside main) so that it remains visible at the top of the screen even as we scroll down. Made sure that it is always visible. An example of this is in the video and in the screenshot at 1200px when scrolled. OMGGGG WHY ISN'T THIS WORKING??????*/
 
 header {
-    position: sticky;
-    top: 0;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border-bottom: 2px solid #45ADAD;
+    padding: 20px;
     z-index: 1000;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+main{
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 20px;
 }
 
 
