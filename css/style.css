@@ -6,12 +6,17 @@
     animation: logoGrow 5s ease-in-out;
 }
 
+
 @keyframes logoGrow {
-    from {width: 25px; 
-          opacity: 0;}
-    to { width: 475px; 
-         opacity: 1;}
-  }
+    from {
+        width: 25px;
+        opacity: 0;
+    }
+    to {
+        width: 475px;
+        opacity: 1;
+    }
+}
 
   /* Step 2: Edited the body element to use the Poppins font (using Google fonts) with serif as a backup.  Also used the image “concrete_seamless.png” as a background-image with a backup color of #f1f1f1. */
 
@@ -27,8 +32,8 @@ header {
     display: flex;
     align-items: space-between;
     flex-direction: row;
-
 }
+
 /* Step 4: Edited the css for the nav_links class to use flex to match the example. Did not modify the list items or the links - modified the nav_links class to use flex. */
 .nav_links {
     display: flex;
