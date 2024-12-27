@@ -30,7 +30,7 @@
 /* Step 3: Edited the css for the header tag (all instances) to use flex to match our example.*/
 header {
     display: flex;
-    align-items: space-between;
+    justify-content: space-between;
     flex-direction: row;
 }
 
@@ -58,10 +58,11 @@ solid 2px border using #45ADAD,
     padding: 20px 0;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+    border: 2px solid #45ADAD;
 }
 /* Step 7: Edited the css for the card class to match the example. Achieved this by using a flex-property to specify an initial “size” of 450px.  (You need to think about this from a “flex” perspective and realize that flex-direction will affect the size of the elements.  You can see that in the mobile view they all have the same width.) */
 .card {
-   flex: 450px;
+   flex-basis: 450px;
    flex-wrap: wrap;
    background-color: #ffffff;
    text-align: center;
@@ -78,6 +79,7 @@ solid 2px border using #45ADAD,
 /* Step 9: Styled the images in the gallery class. These elements have a solid 10px border with a color of #50C7C7, 10px margin on all four sides and a width of 300px. */
 .gallery img {
     border-style: solid;
+    border-color: #50C7C7;
     margin: 10px;
     width: 300px;
 }
@@ -87,7 +89,7 @@ solid 2px border using #45ADAD,
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    flex-wrap: wrap;
+
 }
 
 /*Step 11: Edited the css for the header tag (all instances) and the nav_links class to match the example using flex-properties. The logo is as far to the left as possible and the links as far to the right as possible. Used flex properties, NOT position properties.*/
@@ -117,7 +119,7 @@ header {
     gap: 20px;
 }
 .card {
-    flex: 275px;
+    flex-basis: 275px;
     margin: 0 10px;
     background-color: #ffffff;
     border-radius: 50px;
